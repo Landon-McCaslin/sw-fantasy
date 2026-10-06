@@ -20,9 +20,14 @@ public class FantasyQuest {
         BattleController battle = new BattleController();
         battle.setStrategy(new AggressiveStrategy());
         battle.fight();
+        battle.setStrategy(new DefensiveStrategy());
+        battle.fight();
 
         // Observer
         WeatherSystem weather = new WeatherSystem();
         WeatherObserver observer = new WeatherObserver("Aria");
+        weather.addObserver(observer);
+        weather.setWeather("Stormy");
+        weather.setWeather("Snowy");
     }
 }

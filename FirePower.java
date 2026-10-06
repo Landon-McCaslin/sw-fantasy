@@ -6,9 +6,8 @@ public class FirePower extends HeroDecorator {
 
     @Override
     public void attack() {
-        // TODO:
-        // execute the wrapped behavior
-        // then add the fire damage
+        super.attack();
+        System.out.println("The attack is surrounded with magical fire!");
     }
 
 }

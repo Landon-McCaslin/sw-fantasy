@@ -6,9 +6,8 @@ public class StrengthBoost extends HeroDecorator {
 
     @Override
     public void attack() {
-        // TODO:
-        // execute the regular attack first
-        // then add the strength behavrior
+        super.attack();
+        System.out.println("Hero attacks with extra strength!");
     }
 
 }

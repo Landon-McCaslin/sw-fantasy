@@ -16,10 +16,15 @@ public class Hero implements HeroComponent {
     @Override
     public void showInfo() {
         // TODO
+        System.out.println("Name: " + name);
+        System.out.println("Class: " + heroClass);
+        System.out.println("Level: " + level);
+        System.out.println("Weapon: " + this.weapon);
     }
 
     @Override
     public void attack() {
         // TODO: use the hero's weapon
+        this.weapon.use();
     }
 }
